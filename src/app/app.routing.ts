@@ -9,8 +9,9 @@ import { SignupComponent } from './examples/signup/signup.component';
 import { LandingComponent } from './examples/landing/landing.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 
-const routes: Routes =[
-    { path: '', redirectTo: 'home', pathMatch: 'full' },
+const routes: Routes = [
+    // { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: '', redirectTo: 'landing', pathMatch: 'full' },
     { path: 'home',             component: ComponentsComponent },
     { path: 'user-profile',     component: ProfileComponent },
     { path: 'signup',           component: SignupComponent },
@@ -22,7 +23,7 @@ const routes: Routes =[
   imports: [
     CommonModule,
     BrowserModule,
-    RouterModule.forRoot(routes,{
+    RouterModule.forRoot(routes, {
       useHash: true
     })
   ],

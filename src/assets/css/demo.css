@@ -184,7 +184,7 @@
 }
 
 .footer .copyright {
-    color: #777777;
+    /*color: #777777;*/
     padding: 10px 15px;
     font-size: 14px;
     margin: 15px 3px;
@@ -1295,4 +1295,10 @@ pre.prettyprint {
     padding-top: 0!important;
     position: relative;
     z-index: 2;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 1.6em;
+    }
 }
